@@ -1,4 +1,4 @@
-# LeakageLab — Temporal Risk Benchmark
+# LeakageLab â€” Temporal Risk Benchmark
 
 An independent, **AI-assisted portfolio project** by Nguyen Viet Anh.
 
@@ -7,15 +7,16 @@ LeakageLab turns that question into a reproducible prediction task: 50,000 synth
 transactions, a seven-day label delay, time-based partitions, a reference solver,
 and a submission grader.
 
-[Public solver notebook](notebooks/leakagelab-public.ipynb) ·
-[Problem statement and rubric](docs/problem-statement.md) ·
+[Public solver notebook](notebooks/leakagelab-public.ipynb) Â·
+[Problem statement and rubric](docs/problem-statement.md) Â·
 [Measured results](artifacts/kaggle/results/metrics.json)
 
 ## Run the public notebook
 
-`notebooks/leakagelab-public.ipynb` runs locally or on Kaggle with **CPU and Internet on**.
-It downloads only four solver modules and the checksum-verified public inputs from
-this repository. No private dataset, token, GPU, or paid resource is needed.
+`notebooks/leakagelab-public.ipynb` runs locally or on Kaggle with **CPU**.
+On Kaggle, keep the attached public solver-input ZIP and leave **Internet off**.
+Locally it can read that ZIP (`LEAKAGELAB_PUBLIC_INPUT`) or fetch the same files
+from GitHub. It loads only four solver modules and checksum-verified public inputs. No private dataset, token, GPU, or paid resource is needed.
 Run all cells to fit the baselines and produce `submission.csv`.
 
 The notebook computes validation scores itself. Final-test figures are clearly
