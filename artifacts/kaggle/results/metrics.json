@@ -1,0 +1,72 @@
+{
+  "test": {
+    "average_precision": 0.19312722811821215,
+    "roc_auc": 0.6524821725092513,
+    "log_loss": 0.37056203493520656,
+    "brier": 0.10472114817276418,
+    "precision": 0.20018841262364578,
+    "recall": 0.35774410774410775,
+    "threshold": 0.08107667779907142,
+    "n": 10051,
+    "prevalence": 0.11819719430902398
+  },
+  "model": "logistic",
+  "selection_lock_sha256": "8edf90c91eba3006cbd5cae951b8cdb7b9e2c085048f3027b928c9606eb24699",
+  "submission_sha256": "96c9ca4075529f8062d280392b4fb5988897d9fe3664887cde278a0f472e9c43",
+  "secondary": {
+    "unseen_account_id": {
+      "average_precision": 0.1917681881221543,
+      "roc_auc": 0.6378341976825721,
+      "log_loss": 0.33985658996774204,
+      "brier": 0.0957667120655803,
+      "precision": 0.16707616707616707,
+      "recall": 0.5112781954887218,
+      "threshold": 0.08107667779907142,
+      "n": 1216,
+      "prevalence": 0.109375
+    },
+    "seen_account_id": {
+      "average_precision": 0.19688593390554698,
+      "roc_auc": 0.6581698120103803,
+      "log_loss": 0.3747881606941695,
+      "brier": 0.10595358669074217,
+      "precision": 0.20804195804195805,
+      "recall": 0.33838862559241706,
+      "threshold": 0.08107667779907142,
+      "n": 8835,
+      "prevalence": 0.11941143180531975
+    },
+    "unseen_merchant_id": {
+      "average_precision": 0.20512294005218673,
+      "roc_auc": 0.6131102610615978,
+      "log_loss": 0.4147821290172796,
+      "brier": 0.11726555260921884,
+      "precision": 0.22699386503067484,
+      "recall": 0.29838709677419356,
+      "threshold": 0.08107667779907142,
+      "n": 942,
+      "prevalence": 0.1316348195329087
+    },
+    "seen_merchant_id": {
+      "average_precision": 0.1931014663946996,
+      "roc_auc": 0.6568130627999458,
+      "log_loss": 0.36598904902837676,
+      "brier": 0.10342387855160484,
+      "precision": 0.19795918367346937,
+      "recall": 0.36466165413533835,
+      "threshold": 0.08107667779907142,
+      "n": 9109,
+      "prevalence": 0.11680755296959051
+    }
+  },
+  "uncertainty": {
+    "method": "account cluster percentile bootstrap, conditional on one synthetic seed",
+    "replicates": 200,
+    "valid_replicates": 200,
+    "ap_95_interval": [
+      0.17658042350696887,
+      0.2128113210656457
+    ],
+    "limitation": "Shared merchant/time shocks and generator uncertainty are not covered."
+  }
+}

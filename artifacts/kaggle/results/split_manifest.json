@@ -1,0 +1,57 @@
+{
+  "config": {
+    "seed": 1803,
+    "n_transactions": 50000,
+    "n_accounts": 1500,
+    "n_merchants": 300,
+    "duration_days": 180,
+    "start": "2025-01-01T00:00:00Z",
+    "horizon_days": 7,
+    "train_cutoff_day": 108,
+    "test_cutoff_day": 144,
+    "threads": 2,
+    "bootstrap_replicates": 200,
+    "resource_budget_seconds": 1800
+  },
+  "generator_hash": "665f524ee52c39ed4aa537f594ad94a3b25768bbb3b167e7c2ad68f0e5237577",
+  "features_hash": "9177a3e2bb1715e2cfe6e9a518824126da47f750eddf04538d6600632cec5fc1",
+  "label_freeze": "2025-04-19T00:00:00+00:00",
+  "partitions": {
+    "train": {
+      "n": 28054,
+      "positives": 1630,
+      "prevalence": 0.058102231410850504,
+      "start": "2025-01-01T00:04:00+00:00",
+      "end": "2025-04-11T23:57:17+00:00",
+      "max_label_availability": "2025-04-18T23:57:17+00:00",
+      "ids_hash": "10d0a4f487e638589ff070a9268583a014153a2cd1fdac9c382d8fdbc69ad6e7"
+    },
+    "validation": {
+      "n": 7971,
+      "positives": 480,
+      "prevalence": 0.06021829130598419,
+      "start": "2025-04-19T00:01:26+00:00",
+      "end": "2025-05-17T23:50:49+00:00",
+      "max_label_availability": "2025-05-24T23:50:49+00:00",
+      "ids_hash": "37dd4f91c1f774ef9a1e5f5b0316239e07d0fd60c09827b1c9bec5cce8e4d6d2"
+    },
+    "test": {
+      "n": 10051,
+      "positives": 1188,
+      "prevalence": 0.11819719430902398,
+      "start": "2025-05-25T00:01:42+00:00",
+      "end": "2025-06-29T23:58:19+00:00",
+      "max_label_availability": "2025-07-06T23:58:19+00:00",
+      "ids_hash": "4ca6b8d19d254cf60a70f7b391a8cebd8f0f0d121f71947083c858dd3d9994d5"
+    }
+  },
+  "files": {
+    "author/raw.csv": "7c459930758f810000dc371105a9b5a0d14edf0ee1191bfa394010f2081114ff",
+    "author/test_labels.csv": "46bf113b0ab3d30d3ccb151a8a5518bdbaf6281ddba6315c957da8587521ccbb",
+    "solver/sample_submission.csv": "1de882f6b752923264f45099a95ebf63bdd7e666af385db9a506342ab3f35b4b",
+    "solver/test.csv": "c59e7e86c21b764fce88a48d5e838f325467a5dc28302411fc59bde92e5c5836",
+    "solver/train.csv": "3fd4f8a1c3c8055538f9a39ab5508a1dd855c3a74d2bb66f548ace944121c323",
+    "solver/validation.csv": "3cd0631ef69b6abd00db3388c1bfcc46351aff34d8cedf93f56581de034abd4d"
+  },
+  "purged_rows": 3924
+}

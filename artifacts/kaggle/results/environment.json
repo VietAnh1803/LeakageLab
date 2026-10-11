@@ -1,0 +1,16 @@
+{
+  "python": "3.13.15",
+  "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "cpu_logical": 4,
+  "packages": {
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.0",
+    "psutil": "5.9.5",
+    "PyYAML": "6.0.3"
+  },
+  "gpu_requested": false,
+  "memory_method": "process RSS sampled every 20 ms"
+}

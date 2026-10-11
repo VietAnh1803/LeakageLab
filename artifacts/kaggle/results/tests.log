@@ -1,0 +1,15 @@
+..................                                                       [100%]
+=============================== warnings summary ===============================
+tests/test_benchmark.py::test_preprocessing_fit_only_training
+tests/test_benchmark.py::test_solver_visible_only_end_to_end
+tests/test_benchmark.py::test_solver_visible_only_end_to_end
+tests/test_benchmark.py::test_solver_visible_only_end_to_end
+  /usr/local/lib/python3.13/dist-packages/sklearn/linear_model/_logistic.py:451: DeprecationWarning: scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0.
+    opt_res = optimize.minimize(
+
+tests/test_benchmark.py::test_single_class_auc_and_validation_threshold
+  /usr/local/lib/python3.13/dist-packages/sklearn/metrics/_ranking.py:1033: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+18 passed, 5 warnings in 4.87s

@@ -1,0 +1,10 @@
+{
+  "task": "adverse event within seven days",
+  "label_freeze": "2025-04-19T00:00:00+00:00",
+  "files": {
+    "solver/sample_submission.csv": "aaa1494c1182c92bb7cd4c64f9b2f2156d78227c89e7ba61f3258f322bc957d5",
+    "solver/test.csv": "72a30495a86721c74757028e82c6342469b8c616c0363e7ae5a7bb8fed783f97",
+    "solver/train.csv": "aa220e795bc314be16286ad3281f986af2b6e95031ff4c62fbd7b5a23dadbb32",
+    "solver/validation.csv": "c2e8848df604cb0c72b117cb2a7f9f262b4f4b132a5f2a3529799e9128ff498a"
+  }
+}

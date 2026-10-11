@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "kaggle_run_id": 357285783,
+  "kaggle_version": 2,
+  "notebook_url": "https://www.kaggle.com/code/vanh1803/leakagelab-temporal-ml-benchmark",
+  "clean_state_code_cells_executed": 6,
+  "kaggle_tests_passed": 18,
+  "local_tests_passed": 18,
+  "generator_hash_match": true,
+  "features_hash_match": true,
+  "source_hashes_match": true,
+  "test_metric_parity_tolerance": 1e-12,
+  "max_probability_difference": 3.885780586188048e-16,
+  "kaggle_ui_runtime_seconds": 52.8,
+  "kaggle_benchmark_and_tests_seconds": 29.27005938800005,
+  "kaggle_environment": {
+    "python": "3.13.15",
+    "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_logical": 4,
+    "packages": {
+      "numpy": "2.1.3",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.6.1",
+      "matplotlib": "3.10.0",
+      "psutil": "5.9.5",
+      "PyYAML": "6.0.3"
+    },
+    "gpu_requested": false,
+    "memory_method": "process RSS sampled every 20 ms"
+  },
+  "author_notebook_visibility": "private",
+  "public_inputs": [
+    "bundle_manifest.json",
+    "sample_submission.csv",
+    "test.csv",
+    "train.csv",
+    "validation.csv"
+  ],
+  "public_test_ground_truth": false
+}

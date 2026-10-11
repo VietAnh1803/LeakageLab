@@ -1,0 +1,12 @@
+seed: 1803
+n_transactions: 50000
+n_accounts: 1500
+n_merchants: 300
+duration_days: 180
+start: '2025-01-01T00:00:00Z'
+horizon_days: 7
+train_cutoff_day: 108
+test_cutoff_day: 144
+threads: 2
+bootstrap_replicates: 200
+resource_budget_seconds: 1800
