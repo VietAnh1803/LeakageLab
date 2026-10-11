@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="34" viewBox="0 0 210 34" role="img" aria-label="Run on Kaggle">
+  <title>Run on Kaggle</title>
+  <rect width="210" height="34" rx="6" fill="#162b3a"/>
+  <path d="M20 8v18m1-7 8-9m-8 9 9 7" fill="none" stroke="#20beff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="43" y="22" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600" fill="#fff">Run on Kaggle</text>
+  <path d="M185 11h8v8m0-8-10 10" fill="none" stroke="#20beff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

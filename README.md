@@ -1,5 +1,7 @@
 # LeakageLab â€” Temporal Risk Benchmark
 
+[![Run on Kaggle](.github/kaggle-badge.svg)](https://www.kaggle.com/code/vanh1803/leakagelab-public-reference-solver)
+
 An independent, **AI-assisted portfolio project** by Nguyen Viet Anh.
 
 How do transaction history and delayed labels affect a model evaluated on future data?
@@ -14,10 +16,18 @@ and a submission grader.
 ## Run the public notebook
 
 `notebooks/leakagelab-public.ipynb` runs locally or on Kaggle with **CPU**.
-On Kaggle, keep the attached public solver-input ZIP and leave **Internet off**.
+Open the [public Kaggle notebook](https://www.kaggle.com/code/vanh1803/leakagelab-public-reference-solver),
+sign in, select **Copy & Edit**, then **Run All**. Keep the attached
+[LeakageLab Public Solver Input](https://www.kaggle.com/datasets/vanh1803/leakagelab-public-solver-input)
+dataset, choose **CPU**, and leave **Internet off**.
 Locally it can read that ZIP (`LEAKAGELAB_PUBLIC_INPUT`) or fetch the same files
 from GitHub. It loads only four solver modules and checksum-verified public inputs. No private dataset, token, GPU, or paid resource is needed.
 Run all cells to fit the baselines and produce `submission.csv`.
+
+The public notebook's clean **Save & Run All** completed successfully on Kaggle:
+version 1, run **357340039**, **24.9 seconds**, five executed code cells and
+**10,051 predictions**. Fresh validation AP was **0.132306**; logistic regression
+was selected. Its input is public and works offline.
 
 The notebook computes validation scores itself. Final-test figures are clearly
 marked as the previously verified author-side evaluation, because the public
