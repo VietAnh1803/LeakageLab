@@ -1,4 +1,4 @@
-# LeakageLab â€” Temporal Risk Benchmark
+# LeakageLab — Temporal Risk Benchmark
 
 [![Run on Kaggle](.github/kaggle-badge.svg)](https://www.kaggle.com/code/vanh1803/leakagelab-public-reference-solver)
 
@@ -9,8 +9,8 @@ LeakageLab turns that question into a reproducible prediction task: 50,000 synth
 transactions, a seven-day label delay, time-based partitions, a reference solver,
 and a submission grader.
 
-[Public solver notebook](notebooks/leakagelab-public.ipynb) Â·
-[Problem statement and rubric](docs/problem-statement.md) Â·
+[Public solver notebook](notebooks/leakagelab-public.ipynb) ·
+[Problem statement and rubric](docs/problem-statement.md) ·
 [Measured results](artifacts/kaggle/results/metrics.json)
 
 ## Run the public notebook
