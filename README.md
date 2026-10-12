@@ -41,6 +41,7 @@ solver has no final-test labels.
   the threshold. Both choices are frozen before final grading.
 - The solver reads only labeled train/validation, unlabeled test, and sample submission.
 - The grader joins by transaction ID and rejects malformed IDs, schemas, and probabilities.
+- CSV probabilities use round-trip float parsing to preserve ties at the locked threshold.
 
 The realized partitions contain 28,054 training, 7,971 validation, and 10,051 test rows.
 Repeated accounts are intentional: the main task predicts future transactions,

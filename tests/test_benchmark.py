@@ -105,7 +105,7 @@ def labels_submission():
             pd.DataFrame({"transaction_id": ["a", "b", "c", "d"], "probability": [.1, .6, .8, .9]}))
 
 
-def test_shuffled_submission_and_metric_parity(labels_submission):
+def test_shuffled_submission_and_metric_parity(labels_submission, tmp_path):
     labels, sub = labels_submission
     a = validate_submission(sub, labels)
     b = validate_submission(sub.sample(frac=1, random_state=4), labels)
@@ -115,6 +115,17 @@ def test_shuffled_submission_and_metric_parity(labels_submission):
     assert m["roc_auc"] == roc_auc_score(a.target, a.probability)
     assert m["log_loss"] == log_loss(a.target, a.probability)
     assert m["brier"] == brier_score_loss(a.target, a.probability)
+    # CSV scoring must retain an exact prediction/threshold tie. The default
+    # pandas parser rounds this decimal down, changing the positive decision.
+    threshold = 0.08107667779907142
+    csv_sub = sub.copy()
+    csv_sub["probability"] = [0.01, threshold, 0.02, 0.9]
+    labels.to_csv(tmp_path / "labels.csv", index=False)
+    csv_sub.to_csv(tmp_path / "predictions.csv", index=False)
+    (tmp_path / "lock.json").write_text(json.dumps({"threshold": threshold, "model": "fixture"}))
+    disk = grade(tmp_path / "labels.csv", tmp_path / "predictions.csv", tmp_path / "lock.json")["test"]
+    memory = metrics(labels.target, csv_sub.probability, threshold)
+    assert disk == memory
 
 
 @pytest.mark.parametrize("mutation", ["duplicate", "missing", "extra", "schema", "nan", "inf", "negative", "above_one", "strings", "null_id"])

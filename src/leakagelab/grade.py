@@ -45,7 +45,8 @@ def account_bootstrap(joined, replicates, seed):
 
 def grade(labels_path, submission_path, lock_path, test_features_path=None, train_path=None, replicates=200):
     lock = json.loads(Path(lock_path).read_text())
-    joined = validate_submission(pd.read_csv(submission_path), pd.read_csv(labels_path))
+    # Preserve the saved float exactly: one ULP can flip a locked-threshold tie.
+    joined = validate_submission(pd.read_csv(submission_path, float_precision="round_trip"), pd.read_csv(labels_path))
     result = {"test": metrics(joined.target, joined.probability, lock["threshold"]),
               "model": lock["model"], "selection_lock_sha256": sha256(lock_path),
               "submission_sha256": sha256(submission_path), "secondary": {}}
